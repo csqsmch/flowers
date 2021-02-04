@@ -233,6 +233,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 10px;
+  outline: none;
 }
 
 .slider-nav {
