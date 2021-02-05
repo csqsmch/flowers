@@ -52,11 +52,14 @@ body {
   font-size: 12px;
 }
 
+.header-contacts {
+  text-align: right;
+}
+
 .header-phone {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
-  text-align: right;
   font-weight: 500;
   display: block;
 }
@@ -66,12 +69,10 @@ body {
   font-weight: 400;
   margin-top: 7px;
   display: block;
-  text-align: right;
 }
 
 .callback {
   color: #ff3469;
-  text-align: right;
   display: block;
   margin-top: 16px;
   font-size: 16px;
@@ -86,12 +87,14 @@ body {
 
 .hero-title {
   font-size: 34px;
+  margin: auto;
   margin-bottom: 34px;
   text-transform: uppercase;
   line-height: normal;
   letter-spacing: 0.34px;
   font-weight: 500;
   font-family: "Gotham Pro Medium";
+  max-width: 650px;
 }
 
 .hero-description {
@@ -100,6 +103,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.18px;
   line-height: 1.4;
+  max-width: 590px;
+  margin: auto;
 }
 
 .flowers-slider {
@@ -465,4 +470,67 @@ body {
 
 .flower-slider-button-next:hover .passive, .flower-slider-button-next:not(:hover) .active {
   display: none;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-title {
+  color: #292929;
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.modal-button {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .header-contacts {
+    text-align: center;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .colors {
+    max-width: 200px;
+    margin: auto;
+  }
+  .card-label {
+    margin: 20px auto;
+    display: block;
+  }
+  .footer-info {
+    text-align: left;
+  }
+}
+
+@media (max-width:576px) {
+  .offer, .footer-info, .offer-title {
+    text-align: left;
+  }
 }
